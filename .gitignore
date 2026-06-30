@@ -1,0 +1,32 @@
+# macOS/system noise
+.DS_Store
+**/.DS_Store
+
+# Local runtime/state
+.clawhub/
+.openclaw/
+.venv*/
+browser-profiles/
+memory/
+
+# Personal/private continuity files
+AGENTS.md
+MEMORY.md
+USER.md
+IDENTITY.md
+SOUL.md
+HEARTBEAT.md
+TOOLS.md
+
+# Auction data symlink and local operational data
+# This can include buyer messages, email inbox data, private logistics, and live listing state.
+auctions
+
+# Secrets and credentials
+*.pem
+*.key
+*.token
+*.secret
+.env
+.env.*
+secrets/

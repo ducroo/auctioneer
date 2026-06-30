@@ -1,0 +1,10 @@
+STATUS=draft_needs_review
+APPROVAL=not_approved
+ITEM_ID=
+ITEM_FOLDER=
+SALES_STRATEGY=pending_sales_strategy
+PLATFORM=
+PRICE=
+SHIPPING=
+CREATED_AT=
+UPDATED_AT=
