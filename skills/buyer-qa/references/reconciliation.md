@@ -34,7 +34,7 @@ Relevant fields:
 
 If multiple items match, do not guess.
 
-Log the message as unmatched and ask Lucas for the correct listing URL or item ID.
+Log the message as unmatched and ask the requesting user for the correct listing URL or item ID.
 
 ## Future Script
 

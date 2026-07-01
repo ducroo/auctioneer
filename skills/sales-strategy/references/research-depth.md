@@ -10,7 +10,7 @@ Use when:
 - ordinary household item
 - obvious local pickup item
 - concrete box lot
-- Lucas wants speed
+- the requesting user wants speed
 
 Output a confidence level and rough price range.
 

@@ -2,7 +2,7 @@
 
 Stop before the final publish action.
 
-Show Lucas a compact summary:
+Show the requesting user a compact summary:
 
 - item ID and title
 - platform
@@ -19,6 +19,6 @@ Required final approval phrase:
 Approve publish
 ```
 
-If Lucas edits anything, apply the edit and show the revised summary before publishing.
+If the requesting user edits anything, apply the edit and show the revised summary before publishing.
 
 Do not click the final publish button until the approval phrase is given for the current item.

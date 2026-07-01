@@ -1,6 +1,6 @@
 # Platform Adapters
 
-Keep first-pass adapters pragmatic. Marketplace pages change, so verify fields visually during browser automation and ask Lucas when unsure.
+Keep first-pass adapters pragmatic. Marketplace pages change, so verify fields visually during browser automation and ask the requesting user when unsure.
 
 ## Ricardo
 

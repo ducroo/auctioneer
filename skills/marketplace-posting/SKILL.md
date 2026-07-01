@@ -5,7 +5,7 @@ description: "Prepare and post marketplace listings from local auction item fold
 
 # Marketplace Posting
 
-Use when Lucas asks to post, prepare posting, review posting readiness, or update a marketplace listing from an item folder.
+Use when a requesting user asks to post, prepare posting, review posting readiness, or update a marketplace listing from an item folder.
 
 This skill turns the already-prepared local auction files into a marketplace form entry. For Ricardo, browser time should be the final mechanical step only: the item facts, text, pricing, shipping, photos, and approval state must be ready before opening the site.
 
@@ -36,7 +36,7 @@ For Ricardo, prefer `ricardo-posting.md` when present. It is the human-readable 
 2. Normalize the posting packet using `references/posting-packet.md`.
    - If `ricardo-posting.md` exists, reconcile it against `listing.md`, `strategy.md`, and `status.txt`.
    - If only `listing.md` exists, derive the posting packet from the approved strategy and listing.
-   - Do not open Ricardo while required packet fields are still unknown unless Lucas explicitly accepts the missing field.
+   - Do not open Ricardo while required packet fields are still unknown unless the requesting user explicitly accepts the missing field.
 3. Stage upload photos using `references/photo-staging.md`.
    - Keep originals in `photos/` unchanged.
    - Create deterministic upload copies in the item folder, for example `photos_upload/01_main.jpg`.
@@ -44,10 +44,11 @@ For Ricardo, prefer `ricardo-posting.md` when present. It is the human-readable 
 4. For Ricardo, delegate browser profile and Cloudflare rules to `ricardo-browser-assist`.
 5. Use `references/ricardo-field-map.md` before opening the form.
    - Pick the closest known category/form map.
+   - Prioritize the current main playbooks: dinnerware, pictures/art, carpets/rugs, closets/storage furniture, and clothes.
    - Pre-decide field values and likely dynamic attributes.
-   - Mark unknown or guessed fields for Lucas in the final approval summary.
+   - Mark unknown or guessed fields for the requesting user in the final approval summary.
 6. Open the marketplace form in the persistent, already verified browser context.
-   - For Ricardo, Lucas currently uses persistent Brave; treat that as the default trusted context.
+   - For Ricardo, the current default is the persistent Brave auction profile; treat that as the default trusted context.
    - Do not use fresh/headless public Ricardo sessions.
 7. Fill the form mechanically from the posting packet.
    - Refresh the page snapshot after category changes, dynamic attribute changes, photo upload, validation messages, and navigation.
@@ -60,11 +61,11 @@ For Ricardo, prefer `ricardo-posting.md` when present. It is the human-readable 
 
 - The optimized unit is one item, not a batch. Items may arrive one by one.
 - The browser session should start only after the posting packet and staged photos are ready.
-- The final Ricardo pass should be: open create-listing control, choose category, fill known fields, upload staged photos, resolve validation, pause for approval, publish after approval.
+- The final Ricardo pass should be: open create-listing control, choose the preselected category, fill known fields from the packet/playbook, upload staged photos, resolve validation, pause for approval, publish after approval.
 - Capture every recurring category/field decision in `references/ricardo-field-map.md` or the learning log so the next similar item needs fewer exploratory clicks.
-- Treat `agent-browser` as optional. It can accelerate deterministic filling only when attached to a verified/logged-in context; the persistent Brave profile remains the default when login continuity or Cloudflare state matters.
+- Treat `agent-browser` as optional. It can accelerate deterministic filling only when attached to a verified/logged-in context; the persistent Brave profile remains the default when login continuity or Cloudflare state matters. Never start Ricardo work in a fresh/headless public session.
 - Keep the final publish/edit approval gate unchanged regardless of browser tool.
 
 ## Operating Rule
 
-Marketplace automation reduces mechanical browser work, not approval friction. Publishing, editing live listings, and buyer replies still require explicit Lucas approval.
+Marketplace automation reduces mechanical browser work, not approval friction. Publishing, editing live listings, and buyer replies still require explicit requesting user approval.

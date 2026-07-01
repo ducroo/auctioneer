@@ -24,9 +24,13 @@ For every recurring category, record:
 4. If Ricardo changed the form or a better category is found, update the learning log after the session.
 5. Promote repeated lessons from the learning log into this file.
 
+## Priority Maps
+
+These are the first playbooks to maintain because they match the expected inventory stream: dinnerware, pictures/art, carpets/rugs, furniture/closets, and clothes.
+
 ## Known Maps
 
-### Porcelain / Coffee Service
+### Dinnerware / Porcelain / Coffee Service
 
 - Example item: `A0001_suisse-langenthal_kobalt_gold`
 - Lesson: lead title with brand and product type, then piece count, color/decor, and `Vintage` when accurate.
@@ -39,6 +43,38 @@ For every recurring category, record:
 - Likely category: Home & Garden / Furniture / Bedroom / Beds, or the closest current Ricardo equivalent.
 - Typical values: used condition, quantity 1, pickup only for bulky furniture.
 - Required packet details: dimensions, included/excluded mattress/textiles, transport responsibility, pickup region.
+
+### Closets / Wardrobes / Storage Furniture
+
+- Example items: pending.
+- Likely category: Home & Garden / Furniture / Bedroom or Storage, using the closest current Ricardo equivalent.
+- Typical values: used condition, quantity 1, pickup only, buyer organizes transport.
+- Required packet details: width, depth, height, material if known, door/drawer function, disassembly status, included shelves/rails/keys/hardware.
+- Speed rule: do not open Ricardo until dimensions and pickup-only wording are ready; closets usually fail buyer confidence without dimensions.
+
+### Pictures / Art / Framed Decor
+
+- Example items: pending.
+- Likely category: Art / Prints / Pictures or Home & Garden / Decoration, depending on Ricardo's current taxonomy.
+- Typical values: used condition unless new, auction or fixed price depending on recognizability.
+- Required packet details: outer dimensions, medium if known, frame/glass condition, signature/edition/label if visible, subject/style keywords.
+- Speed rule: avoid artist/provenance claims unless visible or provided; use visual keywords for search.
+
+### Carpets / Rugs
+
+- Example items: pending.
+- Likely category: Home & Garden / Home Textiles / Carpets or closest current equivalent.
+- Typical values: used condition, pickup only unless small/foldable and clean enough to ship.
+- Required packet details: length, width, condition, stains/smell/edge wear, material/origin only if known.
+- Speed rule: exact length x width matters more than deep origin research for ordinary carpets.
+
+### Clothes / Wearable Bundles
+
+- Example items: pending.
+- Likely platform: Vinted first for normal clothes; Ricardo only for valuable lots, costumes, vintage, branded outerwear, or bundles with broad search demand.
+- Typical values: used condition, shipping possible when clean and easy to pack.
+- Required packet details: size, brand, gender/fit, condition, piece count for bundles.
+- Speed rule: do not force clothes through Ricardo unless strategy says Ricardo is the right platform.
 
 ### TV Furniture / HiFi Rack
 

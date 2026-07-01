@@ -7,29 +7,31 @@ description: "Operate Ricardo safely and efficiently through a persistent verifi
 
 Use for Ricardo-specific browser work: posting listings, editing listings, verifying live listing state, and opening buyer-message threads after approval.
 
-Ricardo browser work is intentionally narrow. Strategy, text, pricing, shipping, and photo decisions should happen in local auction files before the browser opens.
+Ricardo browser work is intentionally narrow. Strategy, text, pricing, shipping, photo decisions, category choice, and likely dynamic attributes should happen in local auction files before the browser opens.
 
 ## Boundaries
 
-- Use Lucas's persistent Brave auction profile as the default Ricardo browser context.
+- Use the requesting user's persistent Brave auction profile as the default Ricardo browser context.
+- Begin Ricardo sessions from an already visible, already verified/logged-in browser whenever possible.
 - Do not use fresh/headless `agent-browser` for public Ricardo browsing; the 2026-06-16 public smoke test reached Cloudflare human verification.
 - Do not interact with or attempt to bypass Cloudflare, captcha, or human-verification challenges.
 - `agent-browser` may be used for Ricardo only when attached to an already verified, normal auction browser context/profile, or when a dedicated auction profile has been manually verified first.
 - Prefer the existing OpenClaw/user browser profile whenever visual verification, login continuity, or Cloudflare state matters.
 - Do not bulk-browse Ricardo search results for research.
-- Do not publish, edit live listings, or send buyer replies without explicit Lucas approval for the exact action.
+- Do not use Ricardo browser time for price strategy, category exploration beyond the current form, or rewriting listing text.
+- Do not publish, edit live listings, or send buyer replies without explicit requesting user approval for the exact action.
 
 ## Efficient Posting Pattern
 
 1. Confirm `marketplace-posting` preflight is complete.
 2. Confirm a Ricardo posting packet exists, usually `ricardo-posting.md`.
 3. Confirm upload images are staged in final order.
-4. Check `marketplace-posting/references/ricardo-field-map.md` for the closest known category.
+4. Check `marketplace-posting/references/ricardo-field-map.md` for the closest known category, especially dinnerware, pictures/art, carpets/rugs, closets/storage furniture, and clothes.
 5. Open Ricardo from the persistent Brave context using the normal create-listing path.
-6. Fill only from the packet and field map.
+6. Fill only from the packet and field map; do not decide strategy in the form.
 7. After each dynamic step, refresh the view/snapshot and continue.
 8. Stop at final publish and show the approval summary.
-9. Publish only after Lucas writes `Approve publish` for that item.
+9. Publish only after the requesting user writes `Approve publish` for that item.
 10. Log the result and any new category/form lessons.
 
 ## What A Field Map Means

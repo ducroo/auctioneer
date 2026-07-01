@@ -5,7 +5,7 @@ description: "Generate a daily auction operations report from local item folders
 
 # Daily Report
 
-Use when Lucas asks for a daily overview, morning brief, status report, or operations dashboard.
+Use when a requesting user asks for a daily overview, morning brief, status report, or operations dashboard.
 
 This skill reads local auction state and writes a dated report. It does not contact buyers, publish listings, lower prices, or move item folders.
 
@@ -41,7 +41,7 @@ Per item, inspect available:
 
 1. Determine report date in Europe/Zurich.
 2. Scan auction folders and collect status.
-3. Identify decisions Lucas needs to make.
+3. Identify decisions the requesting user needs to make.
 4. Identify Q&A awaiting approval.
 5. Identify packing, shipping, and pickup tasks.
 6. Identify stale listings using `references/stale-item-rules.md`.
@@ -57,4 +57,4 @@ Per item, inspect available:
 - Do not change prices.
 - Do not contact buyers.
 - Do not publish listings.
-- Do not move folders unless Lucas explicitly asks.
+- Do not move folders unless the requesting user explicitly asks.

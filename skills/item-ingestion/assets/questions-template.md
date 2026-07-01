@@ -1,4 +1,4 @@
-# Fragen an Lucas
+# Fragen an die zuständige Person
 
 1. 
 

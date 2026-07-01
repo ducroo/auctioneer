@@ -4,7 +4,7 @@ Use these sections in order.
 
 ## Today's Priorities
 
-Short checklist of decisions and tasks Lucas should care about today.
+Short checklist of decisions and tasks the requesting user should care about today.
 
 Include:
 
@@ -18,7 +18,7 @@ Include:
 
 Subsections:
 
-- Drafts awaiting Lucas.
+- Drafts awaiting requesting user.
 - Approved, not posted.
 - Active listings.
 
@@ -61,3 +61,8 @@ Use `stale-item-rules.md`.
 ## Notes
 
 Short factual notes, gaps, and warnings.
+
+
+## Ingestion Process Lessons
+
+Include only recent or high-impact ingestion lessons from `ingestion-learning-log.md` when they affect current workflow, missing-information patterns, or category checklist updates. Keep this brief; daily reports should surface operational changes, not duplicate the full log.

@@ -54,7 +54,7 @@ Guten Tag, vielen Dank für Ihr Interesse. Dieser Artikel ist nur zur Abholung a
 Guten Tag, vielen Dank für Ihr Interesse. Versand ist möglich. Wir verrechnen CHF 15 zusätzlich fürs Handling. Freundliche Grüsse
 ```
 
-## Price Offer: Needs Lucas
+## Price Offer: Needs requesting user
 
 ```text
 Guten Tag, vielen Dank für Ihr Angebot. Ich kläre kurz ab, ob dieser Preis passt, und melde mich wieder. Freundliche Grüsse

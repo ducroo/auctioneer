@@ -19,7 +19,7 @@ Classify the buyer message before drafting.
 ## Negotiation Handling
 
 - Draft, do not commit.
-- If offer is reasonable, propose a Lucas approval decision.
+- If offer is reasonable, propose a requesting user approval decision.
 - If offer is low, draft a polite decline or counteroffer with placeholder.
 - Never reveal urgency.
 

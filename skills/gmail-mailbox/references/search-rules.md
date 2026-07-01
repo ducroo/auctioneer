@@ -16,7 +16,7 @@ For routine processing:
 is:unread newer_than:7d
 ```
 
-Do not mark messages read unless Lucas asks.
+Do not mark messages read unless the requesting user asks.
 
 ## Relevant Sources
 

@@ -23,4 +23,4 @@ Set shippable only when all are true:
 - easy to pack
 - value justifies the effort
 
-If uncertain, recommend pickup only or ask Lucas.
+If uncertain, recommend pickup only or ask the requesting user.

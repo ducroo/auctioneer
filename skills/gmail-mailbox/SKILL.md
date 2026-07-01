@@ -15,7 +15,7 @@ Recommended monitoring cadence:
 - one additional check as part of the morning daily report
 - no routine overnight checks
 
-The schedule should be implemented separately with cron after Lucas approves the exact times.
+The schedule should be implemented separately with cron after the requesting user approves the exact times.
 
 ## Scope
 
@@ -25,10 +25,10 @@ The schedule should be implemented separately with cron after Lucas approves the
 - reconcile messages to item folders
 - before sale: hand the buyer question to `buyer-qa` for a Ricardo-platform response
 - after sale: hand pickup or shipping coordination to `buyer-qa` for an email response
-- create or update a Gmail draft only after Lucas approves the exact draft
+- create or update a Gmail draft only after the requesting user approves the exact draft
 - send only after a separate explicit approval
 
-Do not mark read, archive, label, move, trash, or delete messages unless Lucas explicitly requests that exact action.
+Do not mark read, archive, label, move, trash, or delete messages unless the requesting user explicitly requests that exact action.
 
 ## Paths
 
@@ -58,7 +58,7 @@ Keep OAuth files under `~/.openclaw/secrets/` with mode `600`. Never expose or c
 6. Route communication by stage.
    - Pre-sale Ricardo question: prepare a response for Ricardo's messaging interface; do not email the buyer.
    - Post-sale pickup/shipping coordination: prepare an email response.
-   - Ambiguous sale state or item match: move to `Unmatched/` and ask Lucas.
+   - Ambiguous sale state or item match: move to `Unmatched/` and ask the requesting user.
 7. Log the normalized message status.
 8. For an approved post-sale email, create a Gmail draft and report the recipient and draft ID.
 9. Require a new explicit approval before sending.
@@ -68,5 +68,5 @@ Keep OAuth files under `~/.openclaw/secrets/` with mode `600`. Never expose or c
 - Ricardo notification emails are not authorization to answer by email before sale.
 - Never send merely because draft creation was approved.
 - Never infer a recipient or item when reconciliation is ambiguous.
-- Never reveal the full pickup address before confirmed sale/buyer commitment and Lucas's approval.
+- Never reveal the full pickup address before confirmed sale/buyer commitment and the requesting user's approval.
 - Do not expose credentials, tokens, or private buyer data in logs.

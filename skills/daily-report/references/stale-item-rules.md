@@ -12,7 +12,7 @@ Do not lower prices automatically.
 
 ## Drafts
 
-- Draft older than 2 days with missing information: flag for Lucas.
+- Draft older than 2 days with missing information: flag for the requesting user.
 - Draft approved but not posted: flag for posting.
 
 ## Q&A

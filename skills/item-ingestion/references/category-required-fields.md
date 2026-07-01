@@ -4,9 +4,9 @@ Before drafting, decide the item category and check whether buyer-critical infor
 
 Use these states:
 
-- `known`: explicitly provided by Lucas or clearly readable.
+- `known`: explicitly provided by the requesting user, item source, or clearly readable.
 - `visible_estimate`: estimated from photo; label as approximate.
-- `missing_needs_lucas`: important and not visible.
+- `missing_needs_requester`: important and not visible.
 - `not_applicable`: not needed for this item.
 
 ## Universal
@@ -41,11 +41,12 @@ Use these states:
 - Maker / series if visible.
 - Whether it is a complete set or mixed lot.
 
-## Rugs
+## Rugs / Carpets
 
 - Length x width in cm.
 - Condition: stains, fading, edge wear, smell, holes.
 - Material if known.
+- Style/origin only if known or visibly plausible; label uncertainty.
 - Pickup/shipping feasibility.
 
 ## Furniture
@@ -56,6 +57,13 @@ Use these states:
 - Disassembly / transport notes.
 - Pickup only unless clearly small and easy to pack.
 
+### Closets / Wardrobes / Storage Furniture
+
+- Width x depth x height in cm; exact enough for transport planning.
+- Whether it can be disassembled, and whether hardware/keys/shelves/rails are included.
+- Door/drawer function and visible defects.
+- Transport notes: floor/elevator access only if the requesting user provides it; otherwise do not mention.
+
 ## Electronics And Tools
 
 - Tested or untested.
@@ -65,12 +73,13 @@ Use these states:
 - Battery/charger presence where relevant.
 - Plug type / voltage if relevant.
 
-## Art And Decor
+## Pictures / Art / Framed Decor
 
-- Dimensions in cm.
-- Material / medium.
-- Condition.
-- Signature, stamp, or markings if visible.
+- Outer dimensions in cm, and image dimensions if visible or provided.
+- Medium: print, photo, poster, watercolor, oil/acrylic, textile, unknown.
+- Frame/glass condition.
+- Signature, stamp, edition number, label, or markings if visible.
+- Subject/style keywords that are visible and accurate.
 
 ## Concrete Box Lots
 

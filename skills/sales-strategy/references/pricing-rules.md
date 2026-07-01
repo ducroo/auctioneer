@@ -1,6 +1,6 @@
 # Pricing Rules
 
-Respect Lucas's minimum price if provided.
+Respect the requesting user's minimum price if provided.
 
 ## Ricardo: Auction From CHF 1
 
@@ -14,7 +14,7 @@ Good for:
 
 Goal: visibility and bidding competition.
 
-Do not use if demand is uncertain or Lucas has a firm minimum.
+Do not use if demand is uncertain or the requesting user has a firm minimum.
 
 ## Ricardo: Minimum-Bid Auction
 
@@ -45,4 +45,4 @@ For fixed-price items:
 - after 7 days unsold: consider lowering by 15%
 - after 21 days unsold: consider bundling, converting to a concrete box lot, or moving platform
 
-Do not automatically lower prices without Lucas approval.
+Do not automatically lower prices without requesting user approval.

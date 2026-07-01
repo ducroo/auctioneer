@@ -13,7 +13,7 @@ Each draft must include:
 
 ## Commitments Need Approval
 
-Lucas must approve before committing to:
+The requesting user must approve before committing to:
 
 - lower price
 - counteroffer

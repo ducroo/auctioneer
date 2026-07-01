@@ -25,8 +25,8 @@ A complete Ricardo packet should answer:
 ## Packet Quality Rules
 
 - Prefer concrete form values over prose such as "closest available category" when the value is already known from previous postings.
-- Keep uncertainty explicit with `guessed`, `needs Lucas`, or `accepted missing` notes.
-- Keep the description German-only unless Lucas explicitly asks otherwise.
+- Keep uncertainty explicit with `guessed`, `needs requesting user input`, or `accepted missing` notes.
+- Keep the description German-only unless the requesting user explicitly asks otherwise.
 - Do not include phone number, personal email, or full pickup address.
 - Put pickup/shipping terms and private-sale disclaimer in the listing text.
 - If the item needs measurements, brand/model, material, compatibility, size, or condition details for buyer confidence, resolve them before browser posting when feasible.
